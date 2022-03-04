@@ -1,0 +1,104 @@
+*{
+				margin: 0;
+				padding: 0;
+}
+body{
+				background: #fff4d5;
+}
+.cbse{
+				height: 25vh;
+				width: 50vw;
+}
+.icse{
+				height: 25vh;
+				width: 50vw;
+}
+.jac{
+				height: 25vh;
+				width: 50vw;
+}
+.aim{
+				height: 25vh;
+				width: 50vw;
+}
+.class{
+				margin: 9px;
+				padding: 8px;
+				border-style: solid;
+				border-radius: 13px;
+}
+a{
+				text-decoration: none;
+				color: #000000;
+}
+p{
+				padding: 3px;
+				margin: 3px;
+}
+.equation{
+				text-align: center;
+}
+nav {
+   width: 100vw;
+}
+ol {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   justify-content: left;
+   background-color: #f4d5ff;
+}
+ol li {position: relative;
+   padding: 10px 10px;
+   height: 100%;
+   display: flex;
+}
+ol a {
+   z-index: 1;
+   color:#1100ff;
+   text-decoration: none;
+   font-family: serif;
+   font-weight: 400;
+   font-size: 14px;
+   padding: 0;
+}
+ol li::before {
+   content: "";
+   position: absolute;
+   height: 33.33%;
+   width: 0;
+   background-color: #ffffff;
+   right: 0;
+   z-index: 0;
+   top: 33.33%;
+   transition: all .2s;
+}
+ol li::after {
+   content: "";
+   position: absolute;
+   height: 33.33%;
+   width: 0;
+   background-color: #3bff00;
+   left: 0;
+   z-index: 0;
+   bottom: 0;
+   transition: all .2s;
+}
+ol a::before {
+   position: absolute;
+   content: "";
+   height: 33.33%;
+   width: 0;
+   background-color: #ffc700;
+   bottom: 66.66%;
+   left: 0;
+   transition: all .2s;
+}
+ol li:hover:before,
+ol li:hover::after,
+ol li:hover a::before{
+   width: 100%;
+}
